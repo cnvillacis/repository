@@ -1,0 +1,15 @@
+Performing C++ SOURCE FILE Test WCAST failed with the following output:
+Change Dir: /home/nathaly/Downloads/gmsh-4.4.1-source/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/bin/make" "cmTC_aae39/fast"
+/bin/make -f CMakeFiles/cmTC_aae39.dir/build.make CMakeFiles/cmTC_aae39.dir/build
+make[1]: Entering directory '/home/nathaly/Downloads/gmsh-4.4.1-source/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_aae39.dir/src.cxx.o
+/bin/c++    -std=c++11 -DWCAST   -Wint-to-void-pointer-cast -o CMakeFiles/cmTC_aae39.dir/src.cxx.o -c /home/nathaly/Downloads/gmsh-4.4.1-source/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wint-to-void-pointer-cast'; did you mean '-Wint-to-pointer-cast'?
+make[1]: *** [CMakeFiles/cmTC_aae39.dir/build.make:66: CMakeFiles/cmTC_aae39.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/nathaly/Downloads/gmsh-4.4.1-source/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_aae39/fast] Error 2
+
+Source file was:
+int main() { return 0; }
